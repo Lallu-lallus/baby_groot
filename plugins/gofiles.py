@@ -136,7 +136,7 @@ async def query_mgs(client: Bot, message: Message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [InlineKeyboardButton(
-                                "👉 Click Here To View 👈", url="t.me/{}".format(info.username))
+                                "🔥ɢᴇᴛ ғɪʟᴇ🔥", url="t.me/{}".format(info.username))
                              ]
                         ])
                 )
