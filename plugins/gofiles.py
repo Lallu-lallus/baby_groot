@@ -131,7 +131,7 @@ async def query_mgs(client: Bot, message: Message):
                 await client.send_photo(
                     photo="https://telegra.ph/file/8f32273a8b17c84c6acff.jpg",
                     chat_id=message.chat.id,
-                    text=Presets.MEDIA_SEND_TEXT,
+                    caption=Presets.MEDIA_SEND_TEXT,
                     reply_to_message_id=user_message[id],
                     reply_markup=InlineKeyboardMarkup(
                         [
