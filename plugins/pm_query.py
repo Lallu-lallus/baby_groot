@@ -25,7 +25,7 @@ PICS=[
 async def bot_pm(client: Bot, message: Message):
     if message.text == "/start":
         await client.send_photo(
-            photo=random.choice(PICS),
+            photo=f"{random.choice(PICS)}",
             chat_id=message.chat.id,
             text=Presets.WELCOME_TEXT.format(message.from_user.first_name),
             parse_mode='html',
