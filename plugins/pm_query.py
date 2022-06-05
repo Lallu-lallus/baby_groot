@@ -17,11 +17,15 @@ if os.environ.get("ENV", False):
 else:
     from config import Config
 
+PICS=[
+"https://telegra.ph/file/5b46f809a5908918ed0f8.jpg",
+]
 
 @Client.on_message(filters.private & filters.text)
 async def bot_pm(client: Bot, message: Message):
     if message.text == "/start":
-        await client.send_message(
+        await client.send_photo(
+            photo=random.choice(PICS),
             chat_id=message.chat.id,
             text=Presets.WELCOME_TEXT.format(message.from_user.first_name),
             parse_mode='html',
