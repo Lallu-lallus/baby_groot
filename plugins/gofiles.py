@@ -129,7 +129,7 @@ async def query_mgs(client: Bot, message: Message):
         if user_message.keys():
             try:
                 await client.send_photo(
-                    photo=f"{random.coice(PIC)},
+                    photo=f"{random.choice(PIC)},
                     chat_id=message.chat.id,
                     text=Presets.MEDIA_SEND_TEXT,
                     reply_to_message_id=user_message[id],
