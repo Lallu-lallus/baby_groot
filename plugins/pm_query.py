@@ -3,7 +3,7 @@
 import re
 import os
 import time
-
+import random
 from bot import Bot
 from presets import Presets
 from base64 import b64decode
