@@ -3,7 +3,7 @@
 import re
 import os
 import time
-
+import random
 from bot import Bot
 from presets import Presets
 from base64 import b64encode
@@ -126,7 +126,8 @@ async def query_mgs(client: Bot, message: Message):
             return
         if user_message.keys():
             try:
-                await client.send_message(
+                await client.send_photo(
+                    photo=f"{random.coice(PIC)},
                     chat_id=message.chat.id,
                     text=Presets.MEDIA_SEND_TEXT,
                     reply_to_message_id=user_message[id],
