@@ -45,7 +45,7 @@ async def bot_pm(client: Bot, message: Message):
                     ]
                 ]
             )
-            parse_mode='html'
+           
         )
         return
     try:
