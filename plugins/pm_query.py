@@ -19,7 +19,7 @@ else:
     from config import Config
 
 PICS=[
-"https://telegra.ph/file/5b46f809a5908918ed0f8.jpg",
+"https://telegra.ph/file/8f32273a8b17c84c6acff.jpg",
 ]
 
 @Client.on_message(filters.private & filters.text)
@@ -32,18 +32,14 @@ async def bot_pm(client: Bot, message: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("❔ How To Use Me ❔", url="https://t.me/tg_bots_updates")
+                        InlineKeyboardButton("ɢʀᴏᴜᴘ", url="https://t.me/Ls_Bots")
                     ],
                     [
-                        InlineKeyboardButton("🙂 source code", url="https://github.com/Lallu-lallus/ALPHA_IMDB_BOT"),
-                        InlineKeyboardButton("😎 About", callback_data="about")
+                        InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/LSBOTZ_UPDATE"),
+                        InlineKeyboardButton("ʜᴇʟᴘ", url="https://t.me/EDIT_REPO")
                     ],
                     [
-                        InlineKeyboardButton("1 Dev", url="https://t.me/joinchat/Hn3YHLdbQf04MmM1"),
-                        InlineKeyboardButton("2 Dev", url="https://t.me/darkz_angel")
-                    ],
-                    [
-                        InlineKeyboardButton("➕ Add Me To Your Group ➕", url="https://t.me/Dqautofl_bot?startgroup=true")
+                        InlineKeyboardButton("Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ", url="https://t.me/Ls_filesendbot?startgroup=true")
                     ]
                 ]
             )
