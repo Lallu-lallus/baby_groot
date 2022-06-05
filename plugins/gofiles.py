@@ -17,7 +17,9 @@ if os.environ.get("ENV", False):
     from sample_config import Config
 else:
     from config import Config
-
+PIC=[
+"https://telegra.ph/file/8f32273a8b17c84c6acff.jpg",
+]
 
 @Client.on_message(filters.group & filters.text)
 async def query_mgs(client: Bot, message: Message):
