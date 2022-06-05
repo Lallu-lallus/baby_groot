@@ -26,10 +26,26 @@ async def bot_pm(client: Bot, message: Message):
     if message.text == "/start":
         await client.send_photo(
             photo=f"{random.choice(PICS)}",
-            chat_id=message.chat.id,
-            text=Presets.WELCOME_TEXT.format(message.from_user.first_name),
+            caption=Presets.WELCOME_TEXT.format(message.from_user.first_name),
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("❔ How To Use Me ❔", url="https://t.me/tg_bots_updates")
+                    ],
+                    [
+                        InlineKeyboardButton("🙂 source code", url="https://github.com/Lallu-lallus/ALPHA_IMDB_BOT"),
+                        InlineKeyboardButton("😎 About", callback_data="about")
+                    ],
+                    [
+                        InlineKeyboardButton("1 Dev", url="https://t.me/joinchat/Hn3YHLdbQf04MmM1"),
+                        InlineKeyboardButton("2 Dev", url="https://t.me/darkz_angel")
+                    ],
+                    [
+                        InlineKeyboardButton("➕ Add Me To Your Group ➕", url="https://t.me/Dqautofl_bot?startgroup=true")
+                    ]
+                ]
+            )
             parse_mode='html',
-            disable_web_page_preview=True
         )
         return
     try:
