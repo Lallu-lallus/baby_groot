@@ -20,6 +20,8 @@ else:
 
 PICS=[
 "https://telegra.ph/file/8f32273a8b17c84c6acff.jpg",
+"https://telegra.ph/file/275dae0712a93a1bc83f2.jpg",
+"https://telegra.ph/file/7e6d92961ecdf7286dcb5.jpg",
 ]
 
 @Client.on_message(filters.private & filters.text)
