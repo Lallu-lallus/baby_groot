@@ -21,7 +21,7 @@ class Presets(object):
     BLOCK_LIST = ['http://', 'https://', '@', '#', 'bit.ly', 't.me', '/']
     
          
-ABOUT_TXT ="<code>♻️𝐌𝐲 𝐍𝐚𝐦𝐞: GROOT \n" \
+ABOUT_TEXT ="<code>♻️𝐌𝐲 𝐍𝐚𝐦𝐞: GROOT \n" \
 "<code>♻️𝐈 𝐀𝐦 𝐀 𝐒𝐢𝐦𝐩𝐥𝐞 𝐅𝐢𝐥𝐞 𝐒𝐞𝐧𝐝 𝐁𝐨𝐭\n" \
 "<code>♻️𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩\n" \
 "<code>♻️𝐌𝐚𝐤𝐞 𝐌𝐞 𝐀𝐝𝐦𝐢𝐧 𝐓𝐡𝐞𝐫𝐞\n" \
