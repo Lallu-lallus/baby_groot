@@ -12,8 +12,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
-await client.send_photo(
-            photo=random.choice(vid),
+await client.send_mesaage(
             caption=presete.ABOUT_TXT.format(query.from_user.mention),
             chat_id=query.message.chat.id,
             reply_markup=InlineKeyboardMarkup(
