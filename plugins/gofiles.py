@@ -68,7 +68,7 @@ async def query_mgs(client: Bot, message: Message):
                                 from_chat_id=messages.chat.id,
                                 message_id=messages.message_id,
                                 caption=Config.GROUP_U_NAME+Presets.CAPTION_TEXT_DOC.format(media_name,
-                                                                                            media_format, file_size)
+                                                                                            media_format, file_size),
                                 reply_markup=InlineKeyboardMarkup(
                                     [
                                         [InlineKeyboardButton(
