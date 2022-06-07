@@ -157,8 +157,6 @@ async def query_mgs(client: Bot, message: Message):
                                 "ᴄʜᴇᴄᴋ sᴘᴇʟʟɪɴɢ", url="https://www.google.com/search?q={}")
                              ]
                         ])
-                    parse_mode='html',
-                    disable_web_page_preview=True
                 )
             except Exception:
                 pass
