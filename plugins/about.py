@@ -13,7 +13,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 await client.send_message(
-            caption=presete.ABOUT_TXT.format(query.from_user.mention),
+            text=presets.ABOUT_TXT.format(query.from_user.mention),
             chat_id=query.message.chat.id,
             reply_markup=InlineKeyboardMarkup(
                 [
