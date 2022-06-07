@@ -12,7 +12,6 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 @Client.on_message(filters.private & filters.incoming & filters.command("about"))
-async def about(bot, msg):
 await client.send_message(
             text=presets.ABOUT_TXT.format(query.from_user.mention),
             chat_id=query.message.chat.id,
