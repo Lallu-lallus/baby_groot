@@ -16,7 +16,7 @@ async def bot_pm(client: Bot, message: Message):
     if message.text == "/about":
         await client.send_message(
             chat_id=message.chat.id,
-            caption=Presets.ABOUT_TEXT.format(message.from_user.first_name),
+            text=Presets.ABOUT_TEXT.format(message.from_user.first_name),
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
