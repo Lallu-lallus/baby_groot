@@ -154,7 +154,7 @@ async def query_mgs(client: Bot, message: Message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [InlineKeyboardButton(
-                                "ᴄʜᴇᴄᴋ sᴘᴇʟʟɪɴɢ", url="t.me/cml_link"),
+                                "ᴄʜᴇᴄᴋ sᴘᴇʟʟɪɴɢ", url="https://www.google.com/search?q={}")
                              ]
                         ])
                     parse_mode='html',
