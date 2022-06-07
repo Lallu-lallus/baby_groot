@@ -16,4 +16,20 @@ await client.send_photo(
             photo=random.choice(vid),
             caption=presete.ABOUT_TXT.format(query.from_user.mention),
             chat_id=query.message.chat.id,
-            reply_markup=reply_markup,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("ɢʀᴏᴜᴘ", url="https://t.me/Ls_Bots")
+                    ],
+                    [
+                        InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/LSBOTZ_UPDATE"),
+                        InlineKeyboardButton("ʜᴇʟᴘ", url="https://t.me/EDIT_REPO")
+                    ],
+                    [
+                        InlineKeyboardButton("Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ", url="https://t.me/Ls_filesendbot?startgroup=true")
+                    ]
+                ]
+            )
+           
+        )
+        return
