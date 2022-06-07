@@ -69,6 +69,12 @@ async def query_mgs(client: Bot, message: Message):
                                 message_id=messages.message_id,
                                 caption=Config.GROUP_U_NAME+Presets.CAPTION_TEXT_DOC.format(media_name,
                                                                                             media_format, file_size)
+                                reply_markup=InlineKeyboardMarkup(
+                                    [
+                                        [InlineKeyboardButton(
+                                            "ADMIN", url="https://t.me/lallu_tg")
+                                         ]
+                                    ])
                             )
                         except FloodWait as e:
                             time.sleep(e.x)
