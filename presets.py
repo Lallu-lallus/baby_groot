@@ -21,5 +21,4 @@ class Presets(object):
     BLOCK_LIST = ['http://', 'https://', '@', '#', 'bit.ly', 't.me', '/']
     
          
-    ABOUT_TEXT = "My Name : GROOT\n My Creator : @Lallu_tg " \
-                 "Database : No Db\n<code>Server : Heroku\n Repo : No open source</code>"
+ 
