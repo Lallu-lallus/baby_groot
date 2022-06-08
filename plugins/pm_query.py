@@ -38,7 +38,7 @@ async def bot_pm(client: Bot, message: Message):
                     ],
                     [
                         InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/LSBOTZ_UPDATE"),
-                        InlineKeyboardButton("ʜᴇʟᴘ", url="https://t.me/EDIT_REPO")
+                        InlineKeyboardButton("ᴄʀᴇᴀᴛᴏʀ", url="https://t.me/Lallu_tg")
                     ],
                     [
                         InlineKeyboardButton("Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ", url="https://t.me/Ls_filesendbot?startgroup=true")
