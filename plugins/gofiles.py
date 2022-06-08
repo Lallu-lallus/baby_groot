@@ -168,6 +168,4 @@ async def query_mgs(client: Bot, message: Message):
                 try:
                     await msg1.delete()
                     await message.delete()
-                except Exception:
-                    pass
-                return
+                
