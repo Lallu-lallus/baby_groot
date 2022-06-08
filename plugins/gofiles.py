@@ -164,7 +164,5 @@ async def query_mgs(client: Bot, message: Message):
                              ]
                         ])
                 )
-                time.sleep(30)
-                try:
-                    await msg1.delete()
-                    await message.delete()
+            except Exception:
+                pass
