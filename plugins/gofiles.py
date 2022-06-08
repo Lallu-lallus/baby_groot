@@ -152,10 +152,10 @@ async def query_mgs(client: Bot, message: Message):
         else:
             updated_query = query_message.replace(" ", "+")
             try:
-                await client.send_photo(
+               chat=await client.send_photo(
                     photo="https://telegra.ph/file/bcb364d0c94dfdc2527c6.jpg",
                     chat_id=message.chat.id,
-                    P=caption=Presets.NO_MEDIA.format(query_message, updated_query),
+                    caption=Presets.NO_MEDIA.format(query_message, updated_query),
                     reply_to_message_id=message.message_id,
                     reply_markup=InlineKeyboardMarkup(
                         [
@@ -166,7 +166,7 @@ async def query_mgs(client: Bot, message: Message):
                 )
         time.sleep(30)
         try:
-            await p.delete()
+            await chat.delete()
             await message.delete()
             except Exception:
                 pass
