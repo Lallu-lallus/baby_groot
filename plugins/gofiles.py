@@ -22,6 +22,18 @@ PIC=[
 "https://telegra.ph/file/8f32273a8b17c84c6acff.jpg",
 ]
 
+
+FILE_TXT = """➼ 𝑯𝒆𝒚 {mention}
+
+      ｡◕MOVIE DETAILS◕｡
+
+➣ Title: {title}
+➣ Genre: {genres}
+➣ Year: {year}
+➣ Rating: {rating}
+➣ Info: {short_info}
+"""
+
 @Client.on_message(filters.group & filters.text)
 async def query_mgs(client: Bot, message: Message):
     query_message = message.text
@@ -140,7 +152,7 @@ async def query_mgs(client: Bot, message: Message):
                     await client.send_photo(
                     photo=imdb.get('poster'),
                     chat_id=message.chat.id,
-                    caption=Presets.MEDIA_SEND_TEXT.format(message.from_user.first_name,search=query_message),
+                    caption=FILE_TXT.format(mention=message.from_user.mention, query=search, title=imdb.get('title'), genres=imdb.get('genres'), year=imdb.get('year'), rating=imdb.get('rating'), short=imdb.get('short_info'), url=imdb['url']), reply_markup=reply_markup),
                     reply_to_message_id=user_message[id],
                     reply_markup=InlineKeyboardMarkup(
                         [
