@@ -1,6 +1,5 @@
-# ----------------------------------- https://github.com/m4mallu/gofilesbot ------------------------------------------ #
+#kanged from https://github.com/m4mallu/gofilesbot
 
-import imdb
 import re
 import os
 import time
