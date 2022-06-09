@@ -13,6 +13,7 @@ from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from utils import get_poster
+from info import IMDB
 
 if os.environ.get("ENV", False):
     from sample_config import Config
