@@ -135,6 +135,7 @@ async def query_mgs(client: Bot, message: Message):
             return
         if user_message.keys():
             try:
+                if imdb and imdb.get('poster'):
                 imdb=await get_poster(search)
                 await client.send_photo(
                     photo=imdb.get('poster'),
