@@ -1,6 +1,6 @@
 # ----------------------------------- https://github.com/m4mallu/gofilesbot ------------------------------------------ #
 
-import IMDB
+import imdb
 import re
 import os
 import time
