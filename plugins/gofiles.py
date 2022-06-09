@@ -137,7 +137,7 @@ async def query_mgs(client: Bot, message: Message):
             try:
                 imdb=await get_poster(search)
                 if imdb and imdb.get('poster'):
-                await message.send_photo(
+                await client.send_photo(
                 photo=imdb.get('poster'),
                     chat_id=message.chat.id,
                     caption=Presets.MEDIA_SEND_TEXT.format(message.from_user.first_name,search=query_message),
