@@ -55,7 +55,7 @@ async def query_mgs(client: Bot, message: Message):
                                 reply_markup=InlineKeyboardMarkup(
                                     [
                                         [InlineKeyboardButton(
-                                            "👉 CLICK HERE 👈", url="t.me/{}?start={}".format(info.username, secret_query))
+                                            "👉 CLICK HERE 👈", url="t.me/Ls_filesendbot?start={}".format(info.username, secret_query))
                                          ]
                                     ])
                             )
