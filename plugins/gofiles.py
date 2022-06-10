@@ -153,7 +153,7 @@ async def query_mgs(client: Bot, message: Message):
                     await client.reply_photo(
                     photo=imdb.get('poster'),
                     chat_id=message.chat.id,
-                    caption=FILE_TXT.format(mention=message.from_user.mention, query=search, title=imdb.get('title'), genres=imdb.get('genres'), year=imdb.get('year'), rating=imdb.get('rating'), short=imdb.get('short_info'), url=imdb['url']),
+                    caption=Presets.MEDIA_SEND_TEXT.format(message.from_user.first_name,search=query_message),
                     reply_to_message_id=user_message[id],
                     reply_markup=InlineKeyboardMarkup(
                         [
